@@ -1,0 +1,117 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* Header-section */
+.my-header .navbar-brand {
+    font-weight: 500;
+    font-size: 25px;
+}
+.my-header span {
+    color: #fc5e03;
+    font-size: 25px;
+    border: 1px solid #fc5e03;
+    border-radius: 10px;
+    height: 41px;
+    width: 35px;
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    transition: .4s;
+}
+.my-header span:hover{
+    color: #000;
+    background-color:#f3f3f3;
+}
+.my-manu .navbar-nav {
+    margin-left: 335px;
+}
+.my-manu .nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.my-manu .btn {
+    color: #fc5e03;
+    border: 1px solid #fc5e03;
+    margin-left: 30px;
+    transition: .4s;
+}
+.my-manu .btn:hover{
+    background-color:#fc5e03;
+    color: #fff;
+}
+/* slider-section */
+.slider-section{
+    background: url(./img/slider.jpg) no-repeat center center;
+    padding: 180px 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.slider-title h4 {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.slider-title h1{
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.slider-title .btn{
+    color: #fff;
+    border: 1px solid #fc5e03;
+    transition: .4s;
+}
+.slider-title .btn:hover{
+    background-color:#fc5e03;
+    color: #fff;
+}
+/* About-section */
+.about-test-left {
+    margin-top: 100px;
+}
+}
+.about-test-left p {
+    margin-top: 25px;
+    font-size: 1.28rem;
+    font-weight: 400;
+}
+/* feature-section */
+.feature-section .card{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+/* Portpholio-section */
+.portpholio-section{}
+.portpholio-item{
+    position: relative;
+}
+.portpholio-item::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(101, 123, 224, .6);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.portpholio-item:hover::after{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
